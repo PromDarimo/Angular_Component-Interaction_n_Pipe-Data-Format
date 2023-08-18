@@ -1,0 +1,30 @@
+<hr>
+<h3>Pipe Data format</h3>
+<p>{{myName}}</p>
+<p>{{myName | lowercase}}</p>
+<p>{{myName | uppercase}}</p>
+<p>{{myName | titlecase}}</p>
+
+<p>{{myName | slice:5}}</p> <!--From index 5-->
+<p>{{myName | slice:5:8}}</p> <!-- from idex 5 to 8-->
+
+<!--Json-->
+<p>{{data | json}}</p>
+
+<p>{{myNumber | number:'1.2-3'}}</p> <!--2099.89-->
+<p>{{myNumber | number:'5.4-5'}}</p> <!--02099.8900-->
+
+<!--Percent-->
+<p>{{myNumber | percent}}</p> <!--2099.89%-->
+<hr>
+
+<!--Date-->
+<h3>Date Format</h3>
+<p>{{myDate}}</p>
+<p>{{myDate | date}}</p> <!-- Aug 18, 2023 -->
+<p>{{myDate | date:'short'}}</p> <!-- 8/18/23, 3:15 PM -->
+<p>{{myDate | date:'shortDate'}}</p> <!-- 8/18/23 -->
+<p>{{myDate | date:'shortTime'}}</p> <!-- 3:16 PM -->
+<p>{{myDate | date:'Medium'}}</p> <!-- 8e18iu17 -->
+<p>{{myDate | date:'long'}}</p> <!-- August 18, 2023 at 3:17:46 PM GMT+7 -->
+

@@ -1,0 +1,9 @@
+<p>child works!</p>
+Data from parent : <p style="color: pink;">{{parentData}}</p>
+<p>{{ageData}}</p>
+
+<button (click)="sendDataToParent()">Send age to parent</button>
+
+<br><br>
+<input type="text" #item_name>
+<button (click)="sendDataInput(item_name.value)">Send Data</button>

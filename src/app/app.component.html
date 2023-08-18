@@ -1,0 +1,14 @@
+<app-child (myChildEvent)="receiveFromChild($event)" 
+           (myItemData)="receiveItem($event)"
+            [parentData]="name" [ageData] = "age"
+           ></app-child>
+<!--[parentData] declare by developer   //input 
+  name declare in TS
+  both of it assign data to child component-->
+
+<!-- (myChildEvent) declare in child component  //output
+  and is a custome event to get data from child to parent-->
+<p>Data recieve from child by costume event <span style="color: red;"> {{dataFromChild}}</span></p>
+<p>Data from Input <span style="color: aqua;">{{dataFromInput}}</span></p>
+
+<app-pip-data-format></app-pip-data-format>
